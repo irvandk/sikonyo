@@ -1,0 +1,118 @@
+    /* Styling Peta */
+    #map-wrapper {
+      position: relative;
+      height: 90vh;
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+  }
+  #map {
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+  }
+
+/* Floating Search Bar (Kiri Atas) */
+  .search-container {
+    position: absolute;
+    top: 10px;
+    left: 50px; /* Geser dikit dari control zoom */
+    z-index: 999;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 250px;
+    display: none;
+  }
+
+  #toggle-search {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Geser dikit dari control zoom */
+    z-index: 999;
+    background:#0d6efd;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5x;
+    width: 35px;
+    height: 35px;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    line-height: center;
+    border-radius: 5px;
+    color: white;
+  }
+
+  #search-results {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px; /* Batasi tinggi jika daftar panjang */
+    overflow-y: auto;
+  }
+  #search-results li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  #search-results li:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Floating Route Panel */
+  .route-panel {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      z-index: 999;
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      width: 320px;
+      display: none;
+      max-height: 85vh;
+      overflow-y: auto;
+  }
+
+  #toggle-route {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Geser dikit dari control zoom */
+    z-index: 999;
+    background:#0d6efd;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5x;
+    width: 35px;
+    height: 35px;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    line-height: center;
+    border-radius: 5px;
+    color: white;
+  }
+
+  /* Styling Instruksi Rute */
+  .step-item {
+      font-size: 12px;
+      border-bottom: 1px solid #eee;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  /*geser button + - zoom kiri bawah*/
+  .leaflet-top {
+    bottom: 0;
+  }
+
+  .leaflet-top .leaflet-control-zoom {
+    top:90%;
+    transform: translateY(-50%);
+  }
+  .step-icon { margin-right: 5px; }
+
+  .custom-icon { width: 40px; height: 40px; }
